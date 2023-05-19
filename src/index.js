@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.css";
 import Cards from './components/Card';
+import Navbar from "./components/Navbar"
 
 
 
@@ -12,6 +13,7 @@ import Cards from './components/Card';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Navbar/>
    <Cards />
   </React.StrictMode>
 );
