@@ -6,6 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.css";
 import Cards from './components/Card';
 import Navbar from "./components/Navbar"
+import { BrowserRouter as Router, Routes,  Route } from "react-router-dom"
+import Sample from './components/Sample';
+import Childlink from './components/Childlink';
 
 
 
@@ -13,8 +16,16 @@ import Navbar from "./components/Navbar"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Router>
     <Navbar/>
-   <Cards />
+      <Routes>
+        <Route path="/" element={<Cards/>}/>
+        <Route path="/Sample" element={<Sample/>}/>
+        <Route path="/Sample" element={<Sample/>}/>
+        <Route path="/Childlink" element={<Childlink/>}/>
+
+      </Routes>
+   </Router>
   </React.StrictMode>
 );
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import "./card.css";
+import { Link } from 'react-router-dom';
 
 
 const Card = (props) =>{
@@ -20,7 +21,7 @@ const Card = (props) =>{
                     </div>
                     
                      </p>
-                     <a href="#" className='chart'>Add to Cart</a>
+                     <Link to="/Childlink">view product</Link>
             </div>
         </div>
     );

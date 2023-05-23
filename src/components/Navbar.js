@@ -1,27 +1,33 @@
 
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+
 
 export default class Navbar extends Component {
   render() {
     return (
+ 
         <nav className="nav">
+ 
         <a href="/" className="site-title"> PET SHOP</a>
         <ul>
             <li>
-                <a href="/home">Home</a>
+            <Link to="/">Home</Link>
             </li>
             <li>
-            <a href="/about">About</a>
+            <Link to="/Sample">Sample</Link>
             </li>
             <li>
-            <a href="/pricing">Pricing</a>
+            <Link to="/pricing">pricing</Link>
             </li>
             <li>
-            <a href="/contact">Contact</a>
+            <Link to="/contact">Contact</Link>
             </li>
            
         </ul>
+
     </nav>
+
     )
   }
 }
